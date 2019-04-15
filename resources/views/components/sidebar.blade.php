@@ -6,7 +6,7 @@
         <li class="user-profile treeview">
           <a href="index.html">
 			<img src="/dashboard/images/user5-128x128.jpg" alt="user">
-            <span>Juliya Brus</span>
+            <span>Admin</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
@@ -31,31 +31,31 @@
 
         </li>
         <li >
-            <a href="/dashboard/product">
+            <a href="/dashboard/account/product">
                 <i class="fa fa-plus-circle"></i>
                 <span>Add Product</span>
           </a>
         </li>
          <li class="">
-            <a href="/dashboard/products">
+            <a href="/dashboard/account/products">
                 <i class="fa fa-bars"></i>
                 <span>Product Lists</span>
           </a>
         </li>
         <li class="">
-            <a href="/dashboard/sales">
+            <a href="/dashboard/account/sales">
                 <i class="fa fa-bar-chart"></i>
                 <span>Sales</span>
           </a>
         </li>
         <li class="header nav-small-cap">CUSTOMER INFORMATION</li>
 		<li class="">
-          <a href="/dashboard/customers">
+          <a href="/dashboard/account/customers">
             <i class="fa fa-users"></i> <span>Customers</span>
           </a>
         </li>
         <li class="">
-          <a href="/dashboard/orders">
+          <a href="/dashboard/account/orders">
             <i class="fa fa-shopping-cart"></i> <span>Orders</span>
           </a>
         </li>

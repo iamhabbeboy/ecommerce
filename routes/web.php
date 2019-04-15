@@ -41,7 +41,7 @@ Route::get('/account/signout', 'AccountController@logout');
  * Admin Dashboard Routes
  */
 
-Route::group(['prefix' => 'dashboard'], function () {
+Route::group(['prefix' => 'dashboard/account'], function () {
 
     Route::get('/', 'DashboardController@index')->name('dashboard');
 

@@ -31,7 +31,7 @@
                 <span class="float-right"><a class="btn btn-xs btn-warning" href="index.html#">View</a></span>
               </h6>
 			  <div class="flexbox align-items-center">
-				 <div><small>Todays Order</small><p class="font-size-26 mb-0">51,642</p></div>
+				 <div><small>Todays Order</small><p class="font-size-26 mb-0">0</p></div>
 				 <div><div class="font-size-14 text-right"><i class="ion-arrow-graph-up-right font-size-18 text-white mr-1"></i> %18 up from<br> last month</div></div>
 			  </div>
             </div>
@@ -44,7 +44,7 @@
                 <span class="float-right"><a class="btn btn-xs btn-warning" href="index.html#">View</a></span>
               </h6>
 			  <div class="flexbox align-items-center">
-				 <div><small>Monthly Deduction</small><p class="font-size-26 mb-0">$5,354</p></div>
+				 <div><small>Monthly Deduction</small><p class="font-size-26 mb-0">0</p></div>
 				 <div><div class="font-size-14 text-right"><i class="ion-arrow-graph-up-right font-size-18 text-white mr-1"></i> 324 more than<br> last year</div></div>
 			  </div>
             </div>
@@ -58,7 +58,7 @@
                 <span class="float-right"><a class="btn btn-xs btn-warning" href="index.html#">View</a></span>
               </h6>
 			  <div class="flexbox align-items-center">
-				 <div><small>Weekly Revenue</small><p class="font-size-26 mb-0">$1,642</p></div>
+				 <div><small>Weekly Revenue</small><p class="font-size-26 mb-0">0</p></div>
 				 <div><div class="font-size-14 text-right"><i class="ion-arrow-graph-down-right font-size-18 text-white mr-1"></i> %41 down<br> last year</div></div>
 			  </div>
             </div>
@@ -71,7 +71,7 @@
                 <span class="float-right"><a class="btn btn-xs btn-warning" href="index.html#">View</a></span>
               </h6>
 			  <div class="flexbox align-items-center">
-				 <div><small>Yearly Income</small><p class="font-size-26 mb-0">$81,642k</p></div>
+				 <div><small>Yearly Income</small><p class="font-size-26 mb-0">0</p></div>
 				 <div><div class="font-size-14 text-right"><i class="ion-arrow-graph-up-right font-size-18 text-white mr-1"></i> %37 up<br> last year</div></div>
 			  </div>
             </div>
