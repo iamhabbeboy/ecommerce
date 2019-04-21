@@ -53,7 +53,7 @@ class AccountController extends Controller
         if (array_get($_GET, 'rel') == 'signup') {
             $data = $request->all();
             $data['password'] = Hash::make($request->password);
-            Mail::to($request->email)->send(new RegisteredUser());
+            // Mail::to($request->email)->send(new RegisteredUser());
             $response = $this->account->firstOrCreate(['email' => $request->email], $data);
             session(['userinfo' => $response]);
             return redirect('/account/home');
@@ -120,7 +120,7 @@ class AccountController extends Controller
                 $acct = $accountManager->where('customer_id', $fund->customer_id);
                 $acct->update(['amount' => ($fund->amount - $total)]);
 
-                Mail::to($userInfo->email)->send(new UserOrder());
+                // Mail::to($userInfo->email)->send(new UserOrder());
 
                 $status = 1;
                 session::forget('cart');
