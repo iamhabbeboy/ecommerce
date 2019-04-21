@@ -43,11 +43,11 @@
                                                 <a href="product.html">{{array_get($product, '0.title')}}</a>
                                             </h2>
                                         </td>
-                                        <td>&#8358;{{array_get($product, '0.price')}}</td>
+                                        <td>{{array_get($product, '0.price')}} points</td>
                                         <td>
                                             <input class="vertical-quantity form-control" type="text">
                                         </td>
-                                        <td>&#8358;{{$quantityStorage[$key] * array_get($product, '0.price')}}</td>
+                                        <td>{{$quantityStorage[$key] * array_get($product, '0.price')}} points</td>
                                     </tr>
                                   @endforeach
                                 @endif
@@ -145,18 +145,18 @@
                                 <tbody>
                                     <tr>
                                         <td>Subtotal</td>
-                                        <td>&#8358;{{$total}}</td>
+                                        <td>{{$total}} points</td>
                                     </tr>
 
                                     <tr>
-                                        <td>Tax</td>
-                                        <td>&#8358;0.00</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>Order Total</td>
-                                        <td>&#8358;{{$total}}</td>
+                                        <td>{{$total}} points</td>
                                     </tr>
                                 </tfoot>
                             </table>

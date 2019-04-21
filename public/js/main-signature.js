@@ -193,12 +193,12 @@
 					};
 					// console.log(config);
 					that.http(config).done(function(res){
-						if (res.hasOwnProperty('customer_id')) {
+						// if (res.hasOwnProperty('customer_id')) {
 							window.alert('Account Funded Successfully');
 							window.location.reload();
-						} else {
-							window.alert('Error Occured ');
-						}
+						// } else {
+							// window.alert('Error Occured ');
+						// }
 					}).fail(function(err){
 						console.log(err)
 					})

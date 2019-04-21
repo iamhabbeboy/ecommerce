@@ -78,7 +78,7 @@
                                         </a>
                                     </div><!-- End .product-action -->
                                     <div class="price-box">
-                                        <span class="product-price">&#8358;{{array_get($product, 'price')}}</span>
+                                        <span class="product-price">{{array_get($product, 'price')}} points</span>
                                     </div><!-- End .price-box -->
                                 </div><!-- End .product-details -->
                             </div><!-- End .product -->

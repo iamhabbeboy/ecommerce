@@ -53,7 +53,7 @@
 
                                         <div class="price-box">
                                             {{-- <span class="old-price">$81.00</span> --}}
-                                            <span class="product-price">&#8358;{{array_get($product, 'price')}}</span>
+                                            <span class="product-price"> {{array_get($product, 'price')}} points</span>
                                         </div><!-- End .price-box -->
 
                                         <div class="product-desc">

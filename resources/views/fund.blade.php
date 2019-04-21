@@ -19,7 +19,7 @@
                 @php $total = $total + ($card->amount) @endphp
                 <tr>
                     <td> {{$key+1}} </td>
-                    <td>&#8358; {{$card->amount}}</td>
+                    <td>{{$card->amount}} points</td>
                     <td>{{$card->digital_number}}</td>
                     <td>{{$card->created_at}}</td>
                 </tr>
@@ -27,7 +27,7 @@
                 <tr>
                     <th colspan="2">&nbsp;</th>
                     <th class="text-right">Total</th>
-                    <th colspan="2"> &#8358; {{$total}} </th>
+                    <th colspan="2"> {{$total}} points</th>
                 </tr>
             </table>
             @endif

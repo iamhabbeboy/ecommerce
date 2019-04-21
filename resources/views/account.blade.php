@@ -55,8 +55,60 @@
                                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                     {{-- <a href="javascript:void(0)" id="generate">click here</a> --}}
+
+                                    {{-- @if (Session::has('cart')) --}}
+                                    @if (count($cartProductMerged) > 0)
+                                        @php $total = 0 @endphp
+                                        <table class="table">
+                                            <tr>
+                                                <th># </th>
+                                                <th>Image</th>
+                                                <th>Title</th>
+                                                <th>Qty </th>
+                                            </tr>
+                                            @foreach($cartProductMerged as $key => $product)
+                                                @php
+                                                $total = $total + ($quantityStorage[$key] * array_get($product, '0.price'))
+                                                @endphp 
+                                            <tr>
+                                                <td># </td>
+                                                <td><img src="{{array_get($product, '0.with_image.0.image')}}" alt="product" style="width:50px;height:50px;">
+                                                </td>
+                                               
+                                                <td> {{array_get($product, '0.title')}} </td>
+                                                <td>
+                                                        {{array_get($product, '0.price')}} points * {{$quantityStorage[$key] }}  
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td><b>Total</b></td>
+                                        <td>
+                                            <b>{{$total}} points</b>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                    {{-- @endif --}}
+                                    @if ($status == 1)
+                                    <div class="alert alert-success">Payment made successfully
+                                        <a href="javascript:window.location='/account/home'">click to continue </a>
+                                    </div>
+                                    @elseif ($status == 0)
+                                    <div class="alert alert-danger">
+                                        <b>Payment failed</b>
+                                        <br><br/>
+                                        <p> You dont have sufficient points to purchase this products</p>
+                                        <p>Please fund your account</p>
                                     </div>
                                     @endif
+                                    @if ($status != 1)
+                                    <a href="?stat=pay&total={{$total}}" class="btn btn-primary">click to pay</a>
+                                    @endif
+                                    @endif
+                                </div>
+                                @endif
+                                {{-- <a href="javascript:window.location='/account/home'">click to continue </a> --}}
                                 </div>
 
                             </div><!-- End #new-checkout-address -->
