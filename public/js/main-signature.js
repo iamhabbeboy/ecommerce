@@ -27,7 +27,7 @@
 				} else {
 					let dataString = {title: data.val()};
 					console.log(dataString)
-					const route = '/dashboard/category';
+					const route = '/dashboard/account/category';
 					let config = {
 						route: route,
 						data: dataString,
@@ -91,7 +91,7 @@
 			    }
 
 				const config = {
-					route: '/dashboard/ajax-product',
+					route: '/dashboard/account/ajax-product',
 					data: formdata,
 					method: 'post',
 					contentType: false,
